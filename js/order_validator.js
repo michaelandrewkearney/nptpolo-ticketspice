@@ -1,6 +1,4 @@
 // Order Validity Monitoring
-// Select the node that will be observed for mutations
-const main_form = document.getElementsByTagName("form")[0];
 
 // Options for the observer (which mutations to observe)
 const advance_to_checkout_config = { attributes: false, childList: true, subtree: false };
@@ -42,5 +40,9 @@ const advance_to_checkout_mutation_handler = (mutationList, observer) => {
 // Create an observer instance linked to the callback function
 const advance_to_checkout_observer = new MutationObserver(advance_to_checkout_mutation_handler);
 
-// Start observing the target node for configured mutations
-advance_to_checkout_observer.observe(main_form, advance_to_checkout_config);
+window.onload = function() {
+    // Select the node that will be observed for mutations
+    const main_form = document.getElementsByTagName("form")[0];
+    // Start observing the target node for configured mutations
+    advance_to_checkout_observer.observe(main_form, advance_to_checkout_config);
+}

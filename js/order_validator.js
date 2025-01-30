@@ -1,9 +1,18 @@
 // Order Validity Monitoring
 
+import { TicketType } from "./utils";
+
 // Options for the observer (which mutations to observe)
 const advance_to_checkout_config = { attributes: false, childList: true, subtree: false };
 
+const get_ticket_count = () => {
+    const map1 = new Map();
+    let ticketTable = document.querySelectorAll("table.holds-tickets");
+}
+
+
 const is_order_valid = () => {
+    // tailgate minimums
     return false;
 }
 

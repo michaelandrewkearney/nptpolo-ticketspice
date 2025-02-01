@@ -1,0 +1,1 @@
+export const host_path = "https://cdn.jsdelivr.net/gh/michaelandrewkearney/newportpolo-ticketspice@dev"

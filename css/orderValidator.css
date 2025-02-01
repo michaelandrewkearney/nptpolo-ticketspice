@@ -1,0 +1,23 @@
+p.validity-message-wrapper {
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    font-family: "Libre Franklin", sans-serif;
+    margin: 20px auto;
+}
+p.validity-message-wrapper a {
+    color: blue;
+    font-weight: inherit;
+    text-align: inherit;
+    font-family: inherit;
+}
+p.validity-message-wrapper a:hover {
+    color: #292f50;
+    font-weight: inherit;
+    text-align: inherit;
+    font-family: inherit;
+}
+
+circle {
+    r: 30 !important;
+}

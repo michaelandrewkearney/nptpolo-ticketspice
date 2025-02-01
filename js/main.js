@@ -117,7 +117,7 @@ const redrawAll = () => {
 
 const redrawAllSpots = () => {
   redrawSection(chaletSectionNumber);
-  //redrawSection(tailgateSectionNumber);
+  redrawSection(tailgateSectionNumber);
 };
 
 const redrawSection = (sectionNumber) => {
